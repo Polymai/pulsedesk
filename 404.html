@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>PulseDesk — Simple customer feedback forms with smart summaries</title>
+  <meta name="description" content="PulseDesk gives small teams a beautiful three-question feedback form, one link to share anywhere, and a clear dashboard of every response. Pro adds instant AI summaries for $9/month." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="PulseDesk — Know how your customers feel, in one pulse" />
+  <meta property="og:description" content="Create a three-question feedback form, share one link, and read every response in a clean dashboard. Pro condenses feedback into sentiment, themes, and next steps." />
+  <meta property="og:image" content="assets/hero.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="PulseDesk — Simple customer feedback forms" />
+  <meta name="twitter:description" content="Three questions, one share link, and a clear view of what your customers really think." />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/theme.css" />
+  <link rel="stylesheet" href="css/app.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "PulseDesk",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Web",
+    "description": "Simple customer feedback forms: three questions, one share link, and a clear response dashboard with optional AI summaries.",
+    "offers": [
+      { "@type": "Offer", "name": "Free", "price": "0", "priceCurrency": "USD" },
+      { "@type": "Offer", "name": "Pro", "price": "9", "priceCurrency": "USD" }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <div id="app">
+    <!-- Crawlable bootstrap content; replaced by the app on load. -->
+    <div class="landing">
+      <header class="landing__topbar">
+        <span class="brand-wordmark">Pulse<span>Desk</span></span>
+      </header>
+      <section class="hero">
+        <div class="hero__content">
+          <span class="hero__badge">Customer feedback, simplified</span>
+          <h1>Know how your customers feel — in one pulse.</h1>
+          <p class="hero__sub">
+            PulseDesk gives you a beautiful three-question feedback form, one link to share
+            anywhere, and a clear view of every response. Pro adds an instant summary of what
+            your customers are really saying — $9/month, cancel anytime.
+          </p>
+          <ul class="hero__chips" aria-label="Highlights">
+            <li>3-question forms</li>
+            <li>One share link</li>
+            <li>Response dashboard</li>
+            <li>Smart summaries</li>
+          </ul>
+        </div>
+      </section>
+      <section class="landing__section">
+        <h2>How it works</h2>
+        <p>Create a form with a title and three questions. Share one link by email, receipt,
+        or social post — customers answer in seconds, no account needed. Every response lands
+        in your dashboard, and PulseDesk Pro condenses them into sentiment, key themes, and a
+        suggested next step. Start free with 2 forms and 50 responses each.</p>
+      </section>
+    </div>
+  </div>
+
+  <div id="app-loader" class="app-loader" role="status" aria-busy="false" hidden>
+    <div class="app-loader__box">
+      <span class="spinner spinner--lg" aria-hidden="true"></span>
+      <p class="app-loader__text">Working…</p>
+    </div>
+  </div>
+  <div id="toast-host" class="toast-host" aria-live="polite"></div>
+
+  <noscript>
+    <p class="noscript-note">PulseDesk needs JavaScript to collect and show feedback. Please enable JavaScript.</p>
+  </noscript>
+
+  <script src="data/supabaseConfig.js"></script>
+  <script src="data/stripeConfig.js"></script>
+  <script src="data/runtimeConfig.js"></script>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
