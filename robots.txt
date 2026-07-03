@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+# Training crawler disallowed by default; the site owner can allow it later.
+User-agent: GPTBot
+Disallow: /
